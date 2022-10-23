@@ -11,7 +11,7 @@
 <section [ngClass]="{'hide': category == 'Select a'}" class="joke-body">
     <div class="joke">
        <mat-card class="joke-card">
-        <mat-card-title><mat-icon (click)="runCategory(category)">autorenew</mat-icon></mat-card-title>
+        <mat-card-title><mat-icon  matTooltip="reload" (click)="runCategory(category)">autorenew</mat-icon></mat-card-title>
         <mat-card-subtitle>{{category | uppercase }}</mat-card-subtitle>
         <mat-card-content>
           <span>{{joke?.value}}</span>

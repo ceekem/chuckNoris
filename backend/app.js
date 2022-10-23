@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 // enabling CORS for all requests
 app.use(cors());
 
+// Main api
 const url = 'https://api.chucknorris.io/jokes';
 
 //routes
@@ -20,10 +21,11 @@ app.get('/',async (req, res) =>{
     res.send('<h1>Chuck Noris Joke</h1>');
 });
 
+// get random chuck noris joke
 app.get("/jokes/random", async (req, res) =>{
     try { 
-        request(`${url}/random?category=${req.query.category}`, function(err, body){
-            var joke = JSON.parse(body.body);
+        request(`${url}/random?category=${req.query.category}`, function(error, response){
+            var joke = JSON.parse(response.body);
             res.json(joke);
        }, err =>{
            res.json(err);
@@ -34,11 +36,11 @@ app.get("/jokes/random", async (req, res) =>{
     }
 });
 
+// get all categories
 app.get("/jokes/categories", async (req, res)=>{
     try {
-        
-       request(`${url}/categories`, function(err, body){
-            var cat = JSON.parse(body.body);
+       request(`${url}/categories`, function(error, response){
+            var cat = JSON.parse(response.body);
             res.json(cat);
        });
     } catch (err){
