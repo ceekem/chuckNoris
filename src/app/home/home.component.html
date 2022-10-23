@@ -1,0 +1,23 @@
+<section>
+  <div class="label title">{{title}}</div>
+  <div class="button-row">
+    <button [ngClass]="{'selected': c == category }" *ngFor="let c of cat" (click)="runCategory(c)" mat-raised-button [disabled]="c == category">{{c}}</button>
+  </div>
+
+  <div class="label sel">{{category | uppercase }} CATEGORY<span *ngIf="category != 'Select a'"> &nbsp;SELECTED</span></div>
+
+
+</section>
+<section [ngClass]="{'hide': category == 'Select a'}" class="joke-body">
+    <div class="joke">
+       <mat-card class="joke-card">
+        <mat-card-title><mat-icon (click)="runCategory(category)">autorenew</mat-icon></mat-card-title>
+        <mat-card-subtitle>{{category | uppercase }}</mat-card-subtitle>
+        <mat-card-content>
+          <span>{{joke?.value}}</span>
+        </mat-card-content>
+      </mat-card>    
+    </div>
+</section>
+
+<ngx-spinner size="medium"></ngx-spinner>

@@ -1,0 +1,88 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .title{
+    font-size: 54px !important;
+    height: 57px;
+    margin-top: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+
+.label {
+  display: flex;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.sel{
+  color: white;
+}
+
+.button-row  {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    .mat-button-base{
+       margin: 8px 8px 8px 0;
+       font-weight: bolder;
+    }
+
+    .selected{
+      color: rgb(217, 212, 212);
+      font-weight: 500;
+    }
+}
+
+
+}
+
+.joke-body{
+
+    .joke{
+    display: flex;
+    justify-content: center;
+    // height: 145px;
+    margin: 75px;
+      .joke-card {
+        max-width: 541px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        mat-card-title{
+          width: 100%;
+
+          mat-icon{
+            float: right;
+            // position: relative;
+            // bottom: 25px;
+            cursor: pointer;
+          }
+
+        }
+        
+        mat-card-subtitle{
+          font-size: 24px;
+          font-weight: bolder;
+          color: black;
+        }
+
+    }
+
+  }
+}
+
+.hide{
+  display: none;
+}
+
