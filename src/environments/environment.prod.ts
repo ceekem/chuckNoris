@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  API: 'https://api.chucknorris.io/jokes/'
+  API: 'http://localhost:3000/jokes'
 };

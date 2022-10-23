@@ -50,4 +50,4 @@ app.get("/jokes/categories", async (req, res)=>{
     }
 });
 
-app.listen(3001, ()=> console.log("Chuck Noris  Wrapper Server Ready!"));
+app.listen(3000, ()=> console.log("Chuck Noris  Wrapper Server Ready!"));

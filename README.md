@@ -1,27 +1,36 @@
 # ChuckNoris
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+# Setting up the api wrapper
 
-## Development server
+In the backend directory found in the root of the project, you should run:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### `npm install`
 
-## Code scaffolding
+To install the backend(api wrapper) packages.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run the command below in the root of the backend folder to start the backend server
 
-## Build
+### `node app.js`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+it will run on port:3000. `http://localhost:3000/`
 
-## Running unit tests
+# setting up the frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To intall the app dependencies in the project root run:
+### `npm install` 
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## To running the application
 
-## Further help
+In the project directory, you should run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### `ng serve`
+ 
+ for a dev server. Navigate to `http://localhost:4200/`. 
+
+
+## Frontend Tech used Angular 14.
+
+## Backend(Api wrapper) Tech used Express.js.
+
+
