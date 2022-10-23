@@ -22,9 +22,6 @@ app.get('/',async (req, res) =>{
 
 app.get("/jokes/random", async (req, res) =>{
     try { 
-
-        // res.json(req.query.category);
-
         request(`${url}/random?category=${req.query.category}`, function(err, body){
             var joke = JSON.parse(body.body);
             res.json(joke);
@@ -50,4 +47,4 @@ app.get("/jokes/categories", async (req, res)=>{
     }
 });
 
-app.listen(3000, ()=> console.log("Chuck Noris  Wrapper Server Ready!"));
+app.listen(3000, ()=> console.log("Chuck Noris Wrapper Server Ready!"));
